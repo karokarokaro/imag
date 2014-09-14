@@ -18,12 +18,12 @@
   <body>
     <div data-role="page" id="page1" data-title="Вход в игру" data-theme="c" style="background-repeat:repeat repeat;background-color:#c4c4c4;">
       <div data-role="header" data-theme="b" data-fullscreen="false" data-position="fixed" data-tap-toggle="true" data-track-persistent-toolbars="true">
-        <a class="ui-btn-auto" data-theme="b" data-icon="carat-l" data-iconpos="left" data-transition="none" href="">Назад</a>
+        <a class="ui-btn-auto" data-theme="b" data-icon="bars" data-iconpos="notext" data-transition="none" href="#page3"/>
         <h1 style="text-align:center;">Имаджинариум</h1>
-        <a class="ui-btn-auto" data-theme="b" data-icon="power" data-iconpos="right" data-transition="none" href="">Выход</a>
+        <a class="ui-btn-auto" data-theme="b" data-icon="power" data-iconpos="notext" data-transition="none" href="">Выход</a>
       </div>
       <div role="main" class="ui-content" style="margin:0px;padding:1em;">
-        <div class="ui-body ui-body-e " style="margin:auto;padding:0px;;background-repeat:repeat repeat;">
+        <div class="ui-body ui-body-e " style="padding:0px ;;background-repeat:repeat repeat;">
           <label for="loginInput">Логин</label>
           <input type="text" name="login" id="loginInput" value="" data-theme="b" data-mini="false" data-corners="true" data-clear-btn="true"/>
           <label for="passwordInput">Пароль</label>
@@ -35,6 +35,20 @@
       <div data-role="footer" data-theme="b" data-fullscreen="false" data-position="fixed" data-tap-toggle="true" data-track-persistent-toolbars="true">
         <h3 style="text-align:center;">© 2014 Почти все права защищены</h3>
       </div>
+      <div data-role="panel" id="page3" style="background-repeat:repeat repeat;" data-theme="b" data-animate="true" data-display="push" data-position="left">
+        <h1 style="text-align:left;">Меню</h1>
+        <ul data-role="listview" data-theme="a" data-autodividers="false" data-divider-theme="" data-icon="" data-inset="false">
+          <li data-theme="e">
+            <a data-transition="none" href="">Сменить игрока<span class="ui-li-count">12</span></a>
+          </li>
+          <li data-theme="e">
+            <a data-transition="none" href="#page4">Сменить игру</a>
+          </li>
+          <li data-theme="e">
+            <a data-transition="none" href="">Выйти</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div data-role="page" id="page2" data-title="Выбор карты" data-theme="e" style="background-repeat:repeat repeat;background-color:#e3e3e3;">
       <div data-role="header" data-theme="b" data-fullscreen="false" data-position="fixed" data-tap-toggle="true" data-track-persistent-toolbars="true">
@@ -44,7 +58,8 @@
       </div>
       <div role="main" class="ui-content" style="margin:0px;padding:0px;">
         <div class="ui-body ui-body-e " style="margin:auto;padding:0px;;background-repeat:repeat repeat;">
-          <div style="text-align:center;color:#a10000;font-size:medium;font-weight:bold;font-style:italic;margin:0px;padding:5px;">Всегда во время</div>
+          <div style="text-align:center;color:#949494;font-size:smaller;font-weight:normal;font-style:normal;margin:0px;padding:10px 0px 0px 0px;">Ассоциация:</div>
+          <div style="text-align:center;color:#cc167a;font-size:large;font-weight:bold;font-style:italic;margin:0px;padding:0px;">Всегда во время</div>
         </div>
         <div class="ui-body ui-body-e " style="margin:auto;padding:0px;;background-repeat:repeat repeat;">
           <div style="overflow:auto">
@@ -55,7 +70,7 @@
                 </a>
               </div>
             </div>
-            <div class="imgMini" style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
+            <div style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
               <div style="background-repeat:repeat repeat;text-align:center;overflow:hidden;float:initial">
                 <a href="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg">
                   <img src="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg" style="width:100%;text-align:center;margin:0px;padding:0px;" class="imgMini"/>
@@ -71,7 +86,7 @@
                 </a>
               </div>
             </div>
-            <div class="imgMini" style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
+            <div style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
               <div style="background-repeat:repeat repeat;text-align:center;overflow:hidden;float:initial">
                 <a href="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg">
                   <img src="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg" style="width:100%;text-align:center;margin:0px;padding:0px;" class="imgMini"/>
@@ -87,7 +102,7 @@
                 </a>
               </div>
             </div>
-            <div class="imgMini" style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
+            <div style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
               <div style="background-repeat:repeat repeat;text-align:center;overflow:hidden;float:initial">
                 <a href="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg">
                   <img src="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg" style="width:100%;text-align:center;margin:0px;padding:0px;" class="imgMini"/>
@@ -103,7 +118,7 @@
                 </a>
               </div>
             </div>
-            <div class="imgMini" style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
+            <div style="float:left;width:50%;min-height:1px;width:48%;margin:0px;padding:1%;">
               <div style="background-repeat:repeat repeat;text-align:center;overflow:hidden;float:initial">
                 <a href="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg">
                   <img src="http://cs406817.vk.me/v406817324/714/NHYXtL7cDhc.jpg" style="width:100%;text-align:center;margin:0px;padding:0px;" class="imgMini"/>
@@ -113,8 +128,39 @@
           </div>
         </div>
       </div>
+      <div data-role="footer" data-theme="a" data-fullscreen="false" data-position="false" data-tap-toggle="true" data-track-persistent-toolbars="true">
+        <h1 style="text-align:center;">Heading</h1>
+      </div>
       <div data-role="footer" data-theme="b" data-fullscreen="false" data-position="fixed" data-tap-toggle="true" data-track-persistent-toolbars="true">
         <h3 style="text-align:center;">© 2014 Почти все права защищены</h3>
+      </div>
+    </div>
+    <div data-role="page" id="page4" data-title="Выбор игры" data-theme="a" style="background-repeat:repeat repeat;background-color:#e3e3e3;">
+      <div data-role="header" data-theme="b" data-fullscreen="false" data-position="false" data-tap-toggle="true" data-track-persistent-toolbars="true">
+        <a class="ui-btn-auto" data-theme="b" data-icon="bars" data-iconpos="notext" data-transition="none" href="">Меню</a>
+        <h1 style="text-align:center;">Выбор игры</h1>
+        <a class="ui-btn-auto" data-theme="b" data-icon="power" data-iconpos="notext" data-transition="none" href="">Выход</a>
+      </div>
+      <div role="main" class="ui-content" style="margin:0px;padding:0px;">
+        <div class="ui-body ui-body-e " style="margin:auto;padding:0px;;background-repeat:repeat repeat;">
+          <ul data-role="listview" data-theme="e" data-autodividers="false" data-divider-theme="" data-icon="" data-inset="true">
+            <li data-theme="e">
+              <a data-transition="none" href="">Тра-та-та <span class="ui-li-count">12 игроков</span></a>
+            </li>
+            <li data-theme="e">
+              <a data-transition="none" href="">Бездельники<span class="ui-li-count">5 игроков</span></a>
+            </li>
+            <li data-theme="e">
+              <a data-transition="none" href="">Простые<span class="ui-li-count">8 игроков</span></a>
+            </li>
+            <li data-theme="e">
+              <a data-transition="none" href="">Тра-та-та <span class="ui-li-count">9 игроков</span></a>
+            </li>
+            <li data-theme="e">
+              <a data-transition="none" href="">Тра-та-та <span class="ui-li-count">12 игроков</span></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
